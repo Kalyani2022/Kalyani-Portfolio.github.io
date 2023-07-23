@@ -1,98 +1,69 @@
 /* Reset some default styles */
-* {
-    box-sizing: border-box;
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Set a default font family and size for the entire page */
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-  }
-  
-  /* Ensure the page takes up the full height of the viewport */
-  html, body {
-    height: 100%;
-  }
-  
-  /* Create a flex container to ensure footer positioning */
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Set the wrapper to take up all available space and push footer to the bottom */
-  .wrapper {
-    flex: 1;
-  }
-  
-  /* Style for the content section */
-  .content {
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-        }
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            font-size: 20px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
-        nav {
-            background-color: #444;
-            padding: 20px 0;
-        }
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
 
-        nav ul {
-            list-style: none;
-            text-align: center;
-        }
+header h1 {
+    font-size: 2rem;
+}
 
-        nav ul li {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
+nav {
+    background-color: #444;
+    padding: 0.5rem 0;
+}
 
-        nav ul li a:hover {
-            background-color: #555;
-        }
+nav ul {
+    list-style: none;
+    text-align: center;
+}
 
-        section {
-            padding: 20px;
-        }
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
 
-        section h2 {
-            font-size: 18px;
-            margin-bottom: 1px;
-        }
-   }
-  
-  /* Style for the footer */
-  .footer {
-    /* Fixed positioning at the bottom of the page */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 2rem;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
-  
-    /* Customize the appearance of the footer */
-    background-color: #333; /* Dark gray background */
-    color: #fff; /* White text color */
-    padding: 20px;
-    text-align: center;
-  }
-  
+}
+
 footer p {
-    font-size: 8px;
+    font-size: 0.8rem;
 }
