@@ -1,0 +1,55 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a default font family and size for the entire page */
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* Set the wrapper to take up all available space */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Style for the header */
+  .content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style for the footer link */
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style for the footer link on hover */
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

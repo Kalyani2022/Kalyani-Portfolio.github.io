@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a default font family and size for the entire page */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Ensure the page takes up the full height of the viewport */
+  html, body {
+    height: 100%;
+  }
+  
+  /* Create a flex container to ensure footer positioning */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Set the wrapper to take up all available space and push footer to the bottom */
+  .wrapper {
+    flex: 1;
+  }
+  
+  /* Style for the content section */
+  .content {
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 18px;
+            margin-bottom: 1px;
+        }
+   }
+  
+  /* Style for the footer */
+  .footer {
+    /* Fixed positioning at the bottom of the page */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+    /* Customize the appearance of the footer */
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+footer p {
+    font-size: 8px;
+}
