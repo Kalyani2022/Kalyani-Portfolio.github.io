@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio @ KALYANI B RAY</title>
+     <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+     <header>
+          <h1>Welcome To My Tech-World</h1>
+          <p>"Unlocking the Power of Data: A Journey of Resilience and Growth"</p>
+
+     </header>
+     <nav>
+          <ul>
+               <li><a href="#about">About Me</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#volunteering">Volunteering</a></li>
+               <li><a href="#blog">Blog</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#testimonials">Testimonials</a></li>
+               <li><a href="#references">References</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li><a href="#socialmedia">Social Media</a></li>
+          </ul>
+     </nav>
+
+     <section id="about">
+          <h2>About Me</h2>
+          <p>
+               <!-- Add a brief introduction about yourself here -->
+               I am a data analyst with a passion for analyzing data to derive insights and make data-driven decisions.
+               I have experience in data extraction, data cleaning, exploratory data analysis, feature engineering, and
+               building
+               predictive models. I am proficient in Python, SQL, and machine learning algorithms and NLP. I am looking
+               for opportunities to work on challenging projects and contribute to data-driven decision-making
+               processes. I am a quick learner and enjoy working in a collaborative environment. I am also interested in
+               learning new technologies and tools to enhance my skills and knowledge.
+          </p>
+     </section>
+
+     <section id="projects">
+          <h2>Projects</h2>
+          <select id="projectDropdown" onchange="showProjectDetails()">
+               <option value="">Select a project</option>
+               <option value="project1">Project 1: TwiLearn Edu Tech</option>
+               <option value="project2">Project 2: Sun Tech India</option>
+               <option value="project3">Project 3: Raptive Services</option>
+               <option value="project4">Project 4: Self-Initiated End to End Project</option>
+               <option value="project5">Project 5: Unified Mentor Pvt Ltd</option>
+               <option value="project6">Project 6: INVACT</option>
+               <option value="project7">Project 7: Open SAP</option>
+               <option value="project8">Project 8: Cointab</option>
+               <option value="project9">Project 9: Earth Information & Publishing</option>
+               <option value="project10">Project 10: Few Examples Playing with Python</option>
+          </select>
+          <div id="projectDetails" style="margin-top: 20px;">
+               <div style="overflow-x:auto;">
+                    <table border="1" style="border-collapse: collapse; width: 100%;">
+                         <thead>
+                              <tr>
+                                   <th>Project</th>
+                                   <th>Topic</th>
+                                   <th>Objective</th>
+                                   <th>Tools</th>
+                                   <th>Outcome</th>
+                                   <th>Link</th>
+                              </tr>
+                         </thead>
+                         <tbody id="projectDetailsRow">
+                              <!-- Project details will be displayed here -->
+                         </tbody>
+                    </table>
+               </div>
+          </div>
+          <script>
+               function showProjectDetails() {
+                    var projectDetails = {
+                         project1: `<tr>
+                                        <td>Project 1: TwiLearn Edu Tech</td>
+                                        <td>Prediction System for Telecom Customer Churn Analysis</td>
+                                        <td>To build a model to predict customer churn for a telecom company.</td>
+                                        <td>Python, Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost</td>
+                                        <td>The XGBoost model achieved the best performance with an accuracy of 81.69% and a ROC AUC of 0.73.</td>
+                                        <td><a href="https:/www.github.com/KalyaniBRay/Twi-Learn-Ed-Tech/blob/main/telco_customer_churn.ipynb" target="_blank">Telecom Customer Churn Prediction Analysis</a></td>
+                                     </tr>`,
+                         project2: `<tr>
+                                        <td>Project 2: Sun Tech India</td>
+                                        <td>Data extraction from Aerobase Store and store it within a excel file according to client's requirements.</td>
+                                        <td>To extract data from Aerobase Store and store it in an excel file.</td>
+                                        <td>Python, Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost</td>
+                                        <td>Successfully extracted and stored data as per client's requirements.</td>
+                                        <td><a href="https://github.com/KalyaniBRay/Data_Extraction" target="_blank">Data Extraction from Aerobase Store</a></td>
+                                     </tr>`,
+                         project3: `<tr>
+                                        <td>Project 3: Raptive Services</td>
+                                        <td>Translating text from English to Hindi using Python's transform module.</td>
+                                        <td>To build a system that accurately translates English text to Hindi.</td>
+                                        <td>Python, Transformer, Pymupdf, Jupyter Notebook, Google Colab</td>
+                                        <td>Successfully developed a translation system that can be used for various applications requiring English to Hindi translation.</td>
+                                        <td><a href="https://github.com/Kalyani2022/NLP" target="_blank">English to Hindi Translation System</a></td>
+                                     </tr>`,
+                         project4: `<tr>
+                                        <td>Project 4: Self-Initiated End to End Project</td>
+                                        <td>Extract live data from AMFII's official page, load it into a database, and perform analysis to find the best mutual fund.</td>
+                                        <td>To analyze mutual fund data and provide insights for better investment decisions.</td>
+                                        <td>Python, Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</td>
+                                        <td>Successfully analyzed mutual fund data and provided actionable insights for investors.</td>
+                                        <td><a href="https://github.com/Kalyani2022/Mutual-Fund" target="_blank">Best Mutual fund Finder</a></td>
+                                     </tr>`,
+                         project5: `<tr>
+                                        <td>Project 5: Unified Mentor Pvt. Ltd.</td>
+                                        <td>Prediction System for Green Destination's Employee Attrition Analysis</td>
+                                        <td>To build a model to predict Employee's Attrition for based on 'Age', 'Year at Company' and 'Monthly Income'.</td>
+                                        <td>Python, Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Naive Bayes</td>
+                                        <td>The Naive Bayes model achieved the best performance with an accuracy of 0.87% and a ROC AUC of 0.69.</td>
+                                        <td><a href="#">Green Destination's Employee Attrition</a></td>
+                                     </tr>`,
+                         project6: `<tr>
+                                        <td>Project 6: INVACT</td>
+                                        <td>Description of project 6.</td>
+                                        <td>Objective of project 6.</td>
+                                        <td>Tools used in project 6.</td>
+                                        <td>Outcome of project 6.</td>
+                                        <td><a href="#">Link to project 6</a></td>
+                                     </tr>`,
+                         project7: `<tr>
+                                        <td>Project 7: Open SAP</td>
+                                        <td>Description of project 7.</td>
+                                        <td>Objective of project 7.</td>
+                                        <td>Tools used in project 7.</td>
+                                        <td>Outcome of project 7.</td>
+                                        <td><a href="#">Link to project 7</a></td>
+                                     </tr>`,
+                         project8: `<tr>
+                                        <td>Project 8: Cointab</td>
+                                        <td>Description of project 8.</td>
+                                        <td>Objective of project 8.</td>
+                                        <td>Tools used in project 8.</td>
+                                        <td>Outcome of project 8.</td>
+                                        <td><a href="#">Link to project 8</a></td>
+                                     </tr>`,
+                         project9: `<tr>
+                                        <td>Project 9: Earth information & Publishing</td>
+                                        <td>Description of project 9.</td>
+                                        <td>Objective of project 9.</td>
+                                        <td>Tools used in project 9.</td>
+                                        <td>Outcome of project 9.</td>
+                                        <td><a href="#">Link to project 9</a></td>
+                                     </tr>`,
+                         project10: `<tr>
+                                        <td>Project 10: Few Examples Playing with Python</td>
+                                        <td>Collection of amazing Python Codes</td>
+                                        <td>Objective of project 10.</td>
+                                        <td>Tools used in project 10.</td>
+                                        <td>Outcome of project 10.</td>
+                                        <td><a href="#">Link to project 10</a></td>
+                                     </tr>`
+                    };
+                    var selectedProject = document.getElementById("projectDropdown").value;
+                    document.getElementById("projectDetailsRow").innerHTML = projectDetails[selectedProject] || "";
+               }
+          </script>
+     </section>
+
+     <section id="volunteering">
+          <h2>Volunteering Work</h2>
+          <table border="1" style="border-collapse: collapse; width: 100%;">
+               <tr>
+                    <th>Project</th>
+                    <th>Organization</th>
+                    <th>ProEngage</th>
+                    <th>Location</th>
+                    <th>Duration</th>
+               </tr>
+               <tr>
+                    <td><strong>AI Chatbot for Website</strong></td>
+                    <td>Ratna Nidhi Charitable Trust</td>
+                    <td>2025 | 01</td>
+                    <td>Mumbai</td>
+                    <td>6 months</td>
+               </tr>
+               <tr>
+                    <td><strong>Teaching Support - Python Programming</strong></td>
+                    <td>NavGurukul Foundation for Social Welfare</td>
+                    <td>2022 | 01</td>
+                    <td>Delhi</td>
+                    <td>4 months</td>
+               </tr>
+               <tr>
+                    <td><strong>Record Video Lessons for Children of Rural India</strong></td>
+                    <td>eVidyaloka Trust</td>
+                    <td>2020 | 02</td>
+                    <td>Bangalore</td>
+                    <td>2 months</td>
+               </tr>
+               <tr>
+                    <td><strong>Teaching Use of MS Office</strong></td>
+                    <td>iVolunteer</td>
+                    <td>2019 | 02</td>
+                    <td>Jamshedpur</td>
+                    <td>6 months</td>
+               </tr>
+               <tr>
+                    <td><strong>Teach Computers to Children Every Weekend</strong></td>
+                    <td>Udbhas</td>
+                    <td>2019 | 01</td>
+                    <td>Kolkata</td>
+                    <td>6 months</td>
+               </tr>
+          </table>
+     </section>
+
+     <section id="blog">
+          <h2>Blog</h2>
+          <p>
+               <!-- Add a link to your blog here -->
+          <table border="1" style="border-collapse: collapse; width: 100%; margin-top: 20px;">
+               <thead>
+                    <tr>
+                         <th>Title</th>
+                         <th>Short Description</th>
+                         <th>Timeline</th>
+                         <th>Link</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <td>Project 1: TwiLearn Edu Tech</td>
+                         <td>Prediction System for Telecom Customer Churn Analysis</td>
+                         <td>Jan 2023 - Mar 2023</td>
+                         <td><a href="customer_churn_report.html" target="_blank">Documentation</a></td>
+                    </tr>
+                    <tr>
+                         <td>Project 2: Sun Tech India</td>
+                         <td>Data extraction from Aerobase Store and store it within a excel file according to client's
+                              requirements.</td>
+                         <td>Apr 2023 - Jun 2023</td>
+                         <td><a href="https://github.com/KalyaniBRay/Data_Extraction" target="_blank">Documentation</a>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>Project 3: Raptive Services</td>
+                         <td>Translating text from English to Hindi using Python's transform module.</td>
+                         <td>Jul 2023 - Sep 2023</td>
+                         <td><a href="https://github.com/Kalyani2022/NLP" target="_blank">Documentation</a></td>
+                    </tr>
+                    <tr>
+                         <td>Project 4: Self-Initiated End to End Project</td>
+                         <td>Extract live data from AMFII's official page, load it into a database, and perform analysis
+                              to find the best mutual fund.</td>
+                         <td>Oct 2023 - Dec 2023</td>
+                         <td><a href="mutual_fund_return.html" target="_blank">Documentation</a></td>
+                    </tr>
+                    <tr>
+                         <td>Project 5: Unified Mentor Pvt. Ltd.</td>
+                         <td>Prediction System for Green Destination's Employee Attrition Analysis</td>
+                         <td>Jan 2024 - Mar 2024</td>
+                         <td><a href="employee_attrition_report.html">Documentation</a>
+                         </td>
+                    </tr>
+               </tbody>
+          </table>
+          </p>
+     </section>
+
+     <section id="skills">
+          <h2>Skills</h2>
+          <p>
+               <!-- Add your skills here -->
+          <ul>
+               <li>Data Analysis • Data Extraction • Data Cleaning • Exploratory Data Analysis • Feature Engineering •
+                    Predictive Modeling • Machine Learning • Natural Language Processing (NLP) • Python • SQL • Pandas •
+                    NumPy • Matplotlib • Seaborn • Scikit-learn • Linear & Logistic Regression • Decision Tree • Random
+                    Forest • Gradient Boosting & XGBoost • Naive Bayes • Jupyter Notebook • Google Colab • Transformer •
+                    PIL • OpenCV • pillow</li>
+          </ul>
+          </p>
+     </section>
+
+     <section id="testimonials">
+          <h2>Testimonials</h2>
+          <p>
+               <!-- Add testimonials here -->
+          </p>
+          <details>
+               <summary>📁 Testimonials</summary>
+               <ul>
+                    <li><a href="resume.html" target="_blank">Resume</a></li>
+                    <li><a href="cover_letter.html">Cover
+                              Letter</a></li>
+                    <li><a href="ceartificates.html">Certificates</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/your-project-samples-folder-id"
+                                 target="_blank">Project
+                              Presentations</a></li>
+               </ul>
+          </details>
+          </p>
+     </section>
+
+     <section id="references">
+          <h2>References</h2>
+          <p>
+               <!-- Add references here -->
+               <marquee>Available Upon Request</marquee>
+          </p>
+     </section>
+
+     <section id="contact">
+          <h2>Contact</h2>
+          <p>
+               📞 (+91) 6201816890<br>
+               <a href="https://wa.me/917091662462">💬 WhatsApp: <span style="color:green;">(+91)
+                         7091662462</span></a><br>
+               <a href="mailto:raykalyani30@gmail.com">📧 raykalyani30@gmail.com</a><br>
+               <a href="mailto:kalyanibhattacharjee@outlook.com">📧 kalyanibhattacharjee@outlook.com</a><br>
+          </p>
+     </section>
+
+     <section id="socialmedia">
+          <h2>Social Media</h2>
+          <p>
+               <!-- Add links to your social media profiles here -->
+               <a href="">🔗 My Kaggle profile</a><br>
+               <a href="https://www.linkedin.com/in/kalyani-bhattacharjee-480a6692/">🔗 My LinkedIn profile</a><br>
+               <a href="https://github.com/KalyaniBRay" target="_blank">🔗 GitHub Profile For Practice Work </a><br>
+               <a href="https://github.com/Kalyani2022" target="_blank">🔗 GitHub Profile For Assignments
+                    Purpose</a><br>
+          </p>
+     </section>
+
+     <br><br>
+     <button onclick="scrollToTop()"
+             style="position: fixed; bottom: 20px; right: 20px; background-color: #364548; color: white; padding: 10px; border: none; border-radius: 50%; cursor: pointer; font-size: 24px;">↑</button>
+     <script>
+          function scrollToTop() {
+               window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+     </script>
+     <br><br>
+
+     <footer>
+          <style>
+               footer {
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: #364548;
+                    color: white;
+                    text-align: center;
+                    padding: 10px;
+                    display: none;
+               }
+
+               body {
+                    margin-bottom: 50px;
+                    /* Ensure there's space for the footer */
+               }
+          </style>
+          <script>
+               window.addEventListener('scroll', function () {
+                    var footer = document.querySelector('footer');
+                    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                         footer.style.display = 'block';
+                    } else {
+                         footer.style.display = 'none';
+                    }
+               });
+          </script>
+          <p>&copy; 2023 Kalyani (Bhattacharjee) Ray</p>
+     </footer>
+</body>
+
+</html>

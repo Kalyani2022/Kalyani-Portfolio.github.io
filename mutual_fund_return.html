@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Best Mutual Fund Finder Project - Data Analyst / Data Engineer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #35495E;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .project-description {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .project-description p {
+      margin: 10px 0;
+    }
+
+    .project-details ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .tech-stack {
+      background-color: #35495E;
+      color: #3498db;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .tech-stack p {
+      margin: 0;
+    }
+
+    .highlight {
+      background-color: #E5F1F6;
+      padding: 3px 5px;
+      border-radius: 3px;
+    }
+
+    .home-button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Best Mutual Fund Finder Project</h1>
+  </header>
+  <div class="container">
+    <div class="project-description">
+      <p>Hello there! Welcome to my Data Analyst / Data Engineer portfolio showcasing the <span class="highlight">Best
+          Mutual Fund Finder</span> project.</p>
+      <p>In collaboration with a skilled team of two and under the guidance of a professional Expert, I've
+        embarked on a journey to create an innovative solution that simplifies investment decisions through data-driven
+        insights.</p>
+      <p>The core objective of this project is to analyze mutual fund returns, empowering users to make informed
+        investment choices. Our robust analysis engine, crafted using Python and MySQL, processes historical data and
+        presents users with clear visualizations of fund performance, risk, and historical trends.</p>
+      <div class="project-details">
+        <p>The <span class="highlight">Key Highlights</span> of this project include:</p>
+        <ul>
+          <li>Utilizing Python's data manipulation libraries to extract, transform, and load mutual fund data from
+            diverse sources.</li>
+          <li>Implementing advanced analytics to calculate returns, volatility, and risk-adjusted metrics.</li>
+          <li>Designing an intuitive user interface that displays fund profiles and comparison metrics.</li>
+          <li>Integrating MySQL to efficiently store and manage large-scale financial datasets.</li>
+          <li>Deploying the application on Amazon Web Services (AWS) to ensure accessibility and scalability.</li>
+        </ul>
+      </div>
+      <p>Based on the analysis conducted in the Jupyter Notebook, here are some key findings:</p>
+      <ol>
+        <li><strong>Data Collection and Cleaning</strong>:
+          <ul>
+            <li>The dataset contains information on various mutual funds, including their returns over different periods
+              (1M, 3M, 6M, 1Y, 3Y, 5Y).</li>
+            <li>Missing values in the numerical columns were handled by filling them with the mean of each column.</li>
+          </ul>
+        </li>
+        <li><strong>Exploratory Data Analysis (EDA)</strong>:
+          <ul>
+            <li>The dataset was explored to understand the distribution and characteristics of the mutual funds.</li>
+            <li>Various plots were generated to visualize the data, including bar plots, box plots, and scatter plots.
+            </li>
+            <li>A correlation matrix was created to understand the relationships between different numerical variables.
+            </li>
+          </ul>
+        </li>
+        <li><strong>Ranking of Mutual Funds</strong>:
+          <ul>
+            <li>Custom rankings were created based on the returns over different periods.</li>
+            <li>The top 20 mutual funds were identified based on a custom ranking score.</li>
+            <li>A bar plot was generated to visualize the top 20 mutual funds based on the custom ranking.</li>
+          </ul>
+        </li>
+        <li><strong>Clustering</strong>:
+          <ul>
+            <li>Mutual funds were clustered based on their performance using the KMeans algorithm.</li>
+            <li>The dataset was scaled and imputed to handle missing values before clustering.</li>
+            <li>Four clusters were identified, and each mutual fund was assigned to one of these clusters.</li>
+            <li>A scatter plot was generated to visualize the clusters and their centroids.</li>
+          </ul>
+        </li>
+        <li><strong>Principal Component Analysis (PCA)</strong>:
+          <ul>
+            <li>PCA was performed to reduce the dimensionality of the dataset.</li>
+            <li>The first two principal components were extracted and used for further analysis.</li>
+          </ul>
+        </li>
+        <li><strong>Mutual Fund Performance Prediction</strong>:
+          <ul>
+            <li>A RandomForestRegressor model was trained to predict the Net Asset Value (NAV) of mutual funds.</li>
+            <li>The model was evaluated using the Root Mean Squared Error (RMSE), which was found to be approximately
+              560.05.</li>
+          </ul>
+        </li>
+        <li><strong>Sharpe Ratio Calculation</strong>:
+          <ul>
+            <li>The Sharpe Ratio was calculated for each mutual fund to assess its risk-adjusted return.</li>
+            <li>Mutual funds were ranked based on their Sharpe Ratio and 5Y returns.</li>
+            <li>The top recommended mutual funds were identified based on these rankings.</li>
+          </ul>
+        </li>
+      </ol>
+      <p>These findings provide valuable insights into the performance and characteristics of various mutual funds,
+        helping investors make informed decisions.</p>
+    </div>
+    <div class="tech-stack">
+      <p>Key Technologies Used:</p><br>
+      <p><span class="highlight">Python</span> | <span class="highlight">MySQL</span> | <span class="highlight">Jupyter
+          Notebook</span> | <span class="highlight">Pandas</span> | <span class="highlight">NumPy</span> | <span
+                class="highlight">Matplotlib</span> | <span class="highlight">Seaborn</span>| <span
+                class="highlight">Beautiful Soup</span> | <span class="highlight">Requests</span> | <span
+                class="highlight">Scikit-learn</span> | <span class="highlight">Machine Learning Algorithms</span> |
+        <span class="highlight">Data Encryption
+        </span>
+      </p>
+    </div>
+    <div class="home-button-container">
+      <a class="home-button" href="index1.html">Home</a>
+    </div>
+    <div class="top-button-container">
+      <button onclick="scrollToTop()"
+              style="position: fixed; bottom: 20px; right: 20px; background-color: #364548; color: white; padding: 10px; border: none; border-radius: 50%; cursor: pointer; font-size: 24px;">↑</button>
+      <div class="footer"></div>
+      <p>&copy; 2023 Kalyani's Portfolio. All rights reserved.</p>
+    </div>
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    </script>
+  </div>
+  </div>
+</body>
+
+</html>
+</div>
